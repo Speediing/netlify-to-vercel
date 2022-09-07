@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 
 import { mapHeaders } from "./lib/mapHeaders";
-import { mapRedirect } from "./lib/mapRedirect";
+import { mapRedirects } from "./lib/mapRedirects";
 import { parseNetlifyToml } from "./lib/parseNetlifyToml";
 import { writeVercelJson } from "./lib/writeVercelJson";
 
 let netlifyObject = parseNetlifyToml();
 
-const redirects = mapRedirect(
+const redirects = mapRedirects(
   netlifyObject.redirects.filter((redirect) => redirect.status !== 200)
 );
 
-const rewrites = mapRedirect(
+const rewrites = mapRedirects(
   netlifyObject.redirects.filter((redirect) => redirect.status === 200)
 );
 

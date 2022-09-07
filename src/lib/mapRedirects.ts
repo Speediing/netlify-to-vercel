@@ -1,4 +1,4 @@
-export const mapRedirect = (redirects) => {
+export const mapRedirects = (redirects) => {
   return redirects
     .map((redirect) => {
       let querys = [];
