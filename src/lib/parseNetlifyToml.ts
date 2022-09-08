@@ -1,11 +1,11 @@
 const TOML = require("@iarna/toml");
 const fs = require("fs");
-export const parseNetlifyToml = () => {
+export const parseNetlifyToml = (pathUrl: string) => {
   let netlifyObject: any = {};
   try {
-    const fileContents = fs.readFileSync("./netlify.toml").toString();
+    const fileContents = fs.readFileSync(pathUrl).toString();
     netlifyObject = TOML.parse(fileContents);
-    console.log("JSON data is saved.");
+    console.log("netlify.toml data is read");
   } catch (error) {
     console.error(error);
   }
