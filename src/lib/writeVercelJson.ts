@@ -4,6 +4,6 @@ export const writeVercelJson = (vercelJson, pathUrl: string) => {
     fs.writeFileSync(pathUrl, JSON.stringify(vercelJson));
     console.log("▲ vercel.json data is saved. ▲");
   } catch (error) {
-    console.error(error);
+    throw "Wrong vercel.json path, please pass in a correct path to the -v flag";
   }
 };

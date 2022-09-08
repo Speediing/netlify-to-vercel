@@ -7,7 +7,7 @@ export const parseNetlifyToml = (pathUrl: string) => {
     netlifyObject = TOML.parse(fileContents);
     console.log("netlify.toml data is read");
   } catch (error) {
-    console.error(error);
+    throw "Wrong netlify.toml path, please pass in a correct path to the -n flag";
   }
   return netlifyObject;
 };
