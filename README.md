@@ -9,7 +9,7 @@ You can optionally enter settings for netlify-to-vercel (or enter `--help` to sh
 - `--netlify_path` : The path to the `netlify.toml` file to read (default: `./netlify.toml`)
 - `--vercel_path` : The path to the `vercel.json` file to write (default: `./vercel.json`)
 - `--netlify_token` : The auth token for accessing your Netlify environment variables. Generation instructions can be found [here](https://docs.netlify.com/cli/get-started/#obtain-a-token-in-the-netlify-ui) 
-- `--vercel_token` :  The auth token for accessing your Vercel environment variables. Generation instructions can be found [here](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token)
+- `--vercel_token` :  The auth token for writing your Vercel environment variables. Generation instructions can be found [here](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token)
 
 Run the following (with optional flags):
 
