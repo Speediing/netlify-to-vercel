@@ -4,7 +4,7 @@ This is a tool that allows you to quickly migrate your `netlify.toml` file into 
 
 ## Instructions
 
-You can optionally enter settings for netlify-to-vercel (or enter --help to show during runtime):
+You can optionally enter settings for netlify-to-vercel (or enter `--help` to show again during runtime):
 
 - `--netlify_path` : The path to the `netlify.toml` file to read (default: `./netlify.toml`)
 - `--vercel_path` : The path to the `vercel.json` file to write (default: `./vercel.json`)
