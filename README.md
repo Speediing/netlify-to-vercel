@@ -1,6 +1,6 @@
 # Netlify to Vercel Configuration Migrator
 
-This is a tool that allows you to quickly migrate your `netlify.toml` file into a `vercel.json`. No need to copy over redirects by hand!
+This is a tool that allows you to quickly migrate your `netlify.toml` file into a `vercel.json`. No need to copy over redirects by hand! It also allows you to copy your environment variables from a Netlify project to a Vercel project.
 
 ## Instructions
 
