@@ -28,7 +28,7 @@ You will first choose if you want to migrate your environment variables, and the
 ▲ Variables Updated
 ```
 
-You will now be asked if you would like to migrate your `netlify.toml` file. It will look for the paths to the 'netlify.toml' and 'vercel.json' via the flags.
+You will now be asked if you would like to migrate your `netlify.toml` file. It will look for the paths to the `netlify.toml` and `vercel.json` via the flags.
 
 ```bash
 ? Would you like to migrate your netlify.toml to a vercel.json? yes
