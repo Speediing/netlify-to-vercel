@@ -4,17 +4,38 @@ This is a tool that allows you to quickly migrate your `netlify.toml` file into 
 
 ## Instructions
 
-You can optionally enter two settings for netlify-to-vercel:
+You can optionally enter settings for netlify-to-vercel (or enter --help to show during runtime):
 
 - `--netlify_path` : The path to the `netlify.toml` file to read (default: `./netlify.toml`)
 - `--vercel_path` : The path to the `vercel.json` file to write (default: `./vercel.json`)
+- `--netlify_token` : The auth token for accessing your Netlify environment variables. Generation instructions can be found [here](https://docs.netlify.com/cli/get-started/#obtain-a-token-in-the-netlify-ui) 
+- `--vercel_token` :  The auth token for accessing your Vercel environment variables. Generation instructions can be found [here](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token)
 
 Run the following (with optional flags):
 
 ```bash
 npx netlify-to-vercel
 ```
- 
+
+You will first choose if you want to migrate your environment variables, and then you will pick the Netlify project to pull from. Finally, you will select the Vercel project you would like to save the variables to.
+
+```bash
+? Would you like to migrate environment variables? yes
+? Which Netlify Team do you want env vars from? test
+? Which Netlify Project do you want env vars from? helpful-cranachan-3774bc - https://github.com/Speediing/simon-game
+? Which Vercel Team is your project in? jasonwikerpro
+? Which Vercel Project do you want to save the variables at? nextjs-boilerplate
+▲ Variables Updated
+```
+
+You will now be asked if you would like to migrate your `netlify.toml` file
+
+```bash
+? Would you like to migrate your netlify.toml to a vercel.json? yes
+netlify.toml data is read
+▲ vercel.json data is saved. ▲
+```
+
 If you have a `netlify.toml` file that looks like:
 
 ```toml
