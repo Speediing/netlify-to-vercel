@@ -17,7 +17,7 @@ Run the following (with optional flags):
 npx netlify-to-vercel
 ```
 
-You will first choose if you want to migrate your environment variables, and then you will pick the Netlify project to pull from. Finally, you will select the Vercel project you would like to save the variables to.
+You will first choose if you want to migrate your environment variables, and then you will pick the Netlify project to pull from. Finally, you will select the Vercel project you would like to save the variables to. Make sure you have included the Vercel and Netlify auth token flags.
 
 ```bash
 ? Would you like to migrate environment variables? yes
@@ -28,7 +28,7 @@ You will first choose if you want to migrate your environment variables, and the
 ▲ Variables Updated
 ```
 
-You will now be asked if you would like to migrate your `netlify.toml` file
+You will now be asked if you would like to migrate your `netlify.toml` file. It will look for the paths to the 'netlify.toml' and 'vercel.json' via the flags.
 
 ```bash
 ? Would you like to migrate your netlify.toml to a vercel.json? yes
